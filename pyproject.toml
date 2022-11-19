@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "swingerwebapp"
+version = "0.1.0"
+description = ""
+authors = ["techwithpapito <techwithpapito@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.2.2"
+SQLAlchemy = "^1.4.44"
+flask-sqlalchemy = "^3.0.2"
+Flask-WTF = "^1.0.1"
+Flask-Migrate = "^4.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
