@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- create nav -->
+    <nav class="topnav">
+        <a href="#">Log in</a>
+    </nav>
+    <div class="banner">
+        <h1>Ben je klaar om nieuwe ervaringen in je relatie te ontdekken</h1>
+    </div>
+
+    <div class="users-container">
+        {% for user in users %}
+        <a href="#" class="user-container">
+            <div class="profile-picture-container">
+                <img class="profile-picture" height="100px" src="{{ url_for('static', filename='images/no_image.jpg') }}" alt="person image">
+            </div>
+            <div class="name-container">
+                <p>{{user.username }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>
